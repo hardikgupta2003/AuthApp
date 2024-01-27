@@ -6,7 +6,9 @@ require("dotenv").config();
 
 exports.auth=(req,res,next)=>{
     try{
-        const token= req.body.token;
+        // console.log("cookie",);
+        // console.log("body",);
+        const token= req.body.token ;
         if(!token) return res.status(401).json({
             success:false,
             messsage:"No Token Provided"

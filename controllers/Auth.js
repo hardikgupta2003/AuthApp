@@ -93,7 +93,7 @@ exports.login = async (req,res) => {
 
                                 
 
-            user = user.toObject();
+            // user = user.toObject();
             user.token = token;
             user.password = undefined;
 
